@@ -13,6 +13,7 @@
         android:theme="@style/Theme.Kotlinassignment2">
         <activity
             android:name=".MainActivity"
+            android:label="Students List"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,9 +21,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewStudentActivity" />
-        <activity android:name=".StudentDetailsActivity" />
-        <activity android:name=".EditStudentActivity" />
+        <activity
+            android:name=".NewStudentActivity"
+            android:label="New Student" />
+        <activity
+            android:name=".StudentDetailsActivity"
+            android:label="Student Details" />
+        <activity
+            android:name=".EditStudentActivity"
+            android:label="Edit Student" />
     </application>
 
 </manifest>

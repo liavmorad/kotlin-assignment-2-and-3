@@ -3,6 +3,7 @@ package com.example.kotlin_assignment_2
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kotlin_assignment_2.databinding.ActivityMainBinding
 import com.example.kotlin_assignment_2.models.Model
@@ -18,6 +19,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.studentListRv.layoutManager = LinearLayoutManager(this)
+
+        val itemDecoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
+        binding.studentListRv.addItemDecoration(itemDecoration)
+
         adapter = StudentsAdapter(Model.students)
         binding.studentListRv.adapter = adapter
 
