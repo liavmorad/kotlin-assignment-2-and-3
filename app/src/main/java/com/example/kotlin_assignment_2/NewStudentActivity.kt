@@ -1,12 +1,11 @@
 package com.example.kotlin_assignment_2
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.example.kotlin_assignment_2.databinding.ActivityNewStudentBinding
 import com.example.kotlin_assignment_2.models.Model
 import com.example.kotlin_assignment_2.models.Student
 
-class NewStudentActivity : AppCompatActivity() {
+class NewStudentActivity : BaseActivity() {
 
     private lateinit var binding: ActivityNewStudentBinding
 

@@ -2,12 +2,11 @@ package com.example.kotlin_assignment_2
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.example.kotlin_assignment_2.databinding.ActivityEditStudentBinding
 import com.example.kotlin_assignment_2.models.Model
 import com.example.kotlin_assignment_2.models.Student
 
-class EditStudentActivity : AppCompatActivity() {
+class EditStudentActivity : BaseActivity() {
 
     companion object {
         const val EXTRA_STUDENT_ID = "EXTRA_STUDENT_ID"
